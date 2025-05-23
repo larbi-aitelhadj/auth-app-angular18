@@ -3,6 +3,9 @@ import { AuthGuard } from './guards/auth.guard';
 import { DashboardComponent } from './authenticated/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ProjectsComponent } from './authenticated/projects/projects.component';
+import { ContactComponent } from './authenticated/contact/contact.component';
+import { AboutComponent } from './authenticated/about/about.component';
 
 export const routes: Routes = [
   { 
@@ -23,12 +26,42 @@ export const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {
-        path: 'dashboard',
-        component: DashboardComponent
+        path: 'projects',
+        component: ProjectsComponent
       },
       {
         path: '',
-        redirectTo: 'dashboard',
+        redirectTo: 'projects',
+        pathMatch: 'full'
+      }
+    ]
+  },
+   {
+    path: 'authenticated',
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: '',
+        redirectTo: 'about',
+        pathMatch: 'full'
+      }
+    ]
+  },
+   {
+    path: 'authenticated',
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: 'contact',
+        component: ContactComponent
+      },
+      {
+        path: '',
+        redirectTo: 'contact',
         pathMatch: 'full'
       }
     ]

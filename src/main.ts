@@ -6,12 +6,13 @@ import { routes } from './app/app.routes';
 import { AuthInterceptor } from './app/interceptors/auth.interceptor';
 import { importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HeaderComponent } from './app/authenticated/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
-  template: '<router-outlet></router-outlet>'
+  imports: [RouterOutlet, RouterLink, HeaderComponent],
+  template: '<router-outlet/>'
 })
 export class App {}
 

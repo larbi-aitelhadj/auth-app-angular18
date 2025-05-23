@@ -1,0 +1,53 @@
+/* pages/about/about.component.css */
+.about {
+  padding: 3rem 1rem;
+  background-color: #f4f4f8;
+  color: #2e2e2e;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #1c1c2e;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  color: #333;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.skill-category {
+  margin-top: 1.5rem;
+}
+
+.skill-category h4 {
+  margin-bottom: 0.5rem;
+  color: #005f73;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+  color: #00bcd4;
+}
