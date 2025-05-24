@@ -21,13 +21,13 @@ export class ProjectsComponent {
     {
       title: 'Site vitrine',
       description: 'Développement d’un site pour un client local.',
-      imageUrl: 'assets/images/site-vitrine.png',
+      imageUrl: '../../assets/images/comsurf.png',
       link: 'https://example.com/site-vitrine'
     },
     {
       title: 'App mobile',
       description: 'Application de gestion de tâches multiplateforme.',
-      imageUrl: 'assets/images/app-mobile.png',
+      imageUrl: 'assets/images/comsurf.png',
       link: 'https://example.com/app-mobile'
     }
   ];

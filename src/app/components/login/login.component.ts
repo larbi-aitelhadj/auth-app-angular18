@@ -23,6 +23,7 @@ export class LoginComponent {
   ) {}
 
   onSubmit(): void {
+    this.authService.logout();
     this.authService.login(this.credentials).subscribe({
       next: () => {
         this.router.navigate(['/authenticated/about']);
@@ -31,5 +32,9 @@ export class LoginComponent {
         console.error('Login failed:', error);
       }
     });
+  }
+
+  logout(): void {
+    this.authService.logout();
   }
 }
